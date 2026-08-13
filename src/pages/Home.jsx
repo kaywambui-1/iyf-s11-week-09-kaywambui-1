@@ -35,8 +35,10 @@ function Home() {
       <hr />
       <DemoContactForm />
       <hr />
-      <Button variant="primary" onClick={() => alert('Primary clicked')}>Primary</Button>
-      <Button variant="secondary" onClick={() => alert('Secondary clicked')}>Secondary</Button>
+      <div className="flex gap-3">
+        <Button variant="primary" onClick={() => alert('Primary clicked')}>Primary</Button>
+        <Button variant="secondary" onClick={() => alert('Secondary clicked')}>Secondary</Button>
+      </div>
       <div className="bg-blue-500 text-white p-4 rounded">
         If this box is blue with white text, Tailwind is working!
       </div>

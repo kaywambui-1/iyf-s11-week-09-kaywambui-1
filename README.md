@@ -1,16 +1,49 @@
-# React + Vite
+# Week 9: React Advanced — Routing, Data Fetching, Custom Hooks & Styling
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Author
+- **Name:** Christine Kamau
+- **GitHub:** [@kaywambui-1](https://github.com/kaywambui-1)
+- **Date:** August 14, 2026
 
-Currently, two official plugins are available:
+## Project Description
+A solo practice project covering Lesson 17 (data fetching, React Router, loading/error states) and Lesson 18 (custom hooks, styling approaches, a shared component library, and an accessibility audit). Built with React + Vite.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Technologies Used
+- React
+- Vite
+- JavaScript (ES6+)
+- React Router
+- CSS Modules
+- Tailwind CSS v4
+- Chrome DevTools Lighthouse (accessibility auditing)
 
-## React Compiler
+## Features
+- **Data fetching** — posts fetched directly with `useState`/`useEffect`, and via a reusable `useFetch` custom hook (dummyjson.com API)
+- **Routing** — nested routes with `BrowserRouter`, a shared `Layout` with `Outlet`, dynamic post detail pages (`posts/:postId`), active-link styling with `NavLink`, and a logout redirect using `useNavigate`
+- **Loading & error handling** — shared `LoadingSpinner` and `ErrorMessage` components with a working retry button
+- **Custom hooks** — `useLocalStorage` (Settings: theme + font size), `useToggle` (Modal), `useForm` (contact form)
+- **Styling** — CSS Modules (`Button.module.css` with variant props) and Tailwind CSS v4
+- **Shared component library** — `Button`, `Input`, `Card`, `Modal`, `Avatar` in `src/components/shared/`, each with its own folder and a top-level barrel export
+- **Accessibility audit** — full Lighthouse accessibility pass with fixes (see below)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## How to Run
+1. Clone this repository
+2. Run `npm install`
+3. Run `npm run dev`
 
-## Expanding the Oxlint configuration
+## Accessibility Audit
+- **Before:** 20/22
+- **After:** 21/22
+- **Fixes:**
+  - Increased button padding and added `min-height: 44px` in `Button.module.css` so all buttons meet the minimum touch target size
+  - Darkened the primary button color from `#007bff` to `#0056b3` to meet the AA contrast ratio requirement (4.5:1)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Lessons Learned
+I learned how to fetch data with vite
+How to load and handle errors
+
+## Challenges Faced
+the accessibility audit was hard to fix because i did'd know what needed to be changed.
+
+
+
