@@ -3,6 +3,9 @@ import FetchDemo from '../components/FetchDemo';
 import WindowSize from '../components/WindowSize';
 import ThemeToggle from '../components/ThemeToggle';
 import PostListWithHook from '../components/PostListWithHook';
+import Settings from '../components/Settings';
+import Modal from '../components/Modal';
+import DemoContactForm from '../components/DemoContactForm';
 
 function Home() {
   return (
@@ -19,6 +22,12 @@ function Home() {
       <hr />
       <h2>Custom Hook Demo</h2>
       <PostListWithHook />
+      <hr />
+      <Settings /> 
+      <hr />
+      <Modal />
+      <hr />
+      <DemoContactForm />
     </div>
   );
 }

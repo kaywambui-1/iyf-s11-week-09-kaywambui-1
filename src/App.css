@@ -222,3 +222,12 @@ nav a.active {
   padding: 2rem;
   color: #b91c1c;
 }
+
+.modal {
+  border: 2px solid #333;
+  background: #f9f9f9;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  max-width: 300px;
+}
